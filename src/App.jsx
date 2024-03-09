@@ -232,6 +232,14 @@ function App() {
       date: "1 December 2023",
       content: "Career",
     },
+    {
+      img: "https://www.guvi.in/blog/wp-content/uploads/2023/10/Feature-image-Best-books-to-learn-data-science.webp",
+      title: "Best Data Science Books to Learn in 2024",
+      description:
+        "Today, we’re going to talk about something really cool: data science. It’s all about using",
+      date: "26 October 2023",
+      content: "Data Science",
+    }
   ];
 
   const [sortedData, setSortedData] = useState([]);
@@ -246,6 +254,7 @@ function App() {
     <>
       <TopNav />
       <Nav />
+      <div className="bac">
       <div className="card-container main-card mt-3 pt-3 d-flex justify-content-center">
         <div className="row row-cols-1 row-cols-md-3 g-3">
           <Routes>
@@ -281,6 +290,7 @@ function App() {
         </div>
       </div>
       <Footer />
+      </div>
     </>
   );
 }
